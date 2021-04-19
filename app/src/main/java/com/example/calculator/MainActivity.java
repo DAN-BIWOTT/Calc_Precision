@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 
 
 public class MainActivity extends AppCompatActivity {
-//We declare the variables that are meant to hold
+//We declare the variables that are meant to hold the stuff on the view.
     private TextView screen;
     private EditText precision_val;
     private String display="";
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//            We are going to pull values from our view using R.id.
         ImageButton deletevar = (ImageButton) findViewById(R.id.butdelet);
         deletevar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,22 +47,22 @@ public class MainActivity extends AppCompatActivity {
 
         screen = (TextView)findViewById(R.id.input_box);
         screen.setText(display);
-        inputtext = findViewById(R.id.input_box);
-        precision_val = findViewById(R.id.precision_box);
+        inputtext = findViewById(R.id.input_box);//this is us taking everything typed in the upper screen
+        precision_val = findViewById(R.id.precision_box);//this is us taking the values inside the lower screen
         displaytext = findViewById(R.id.result_box);
     }
-
+//im doing this to keep the equations on the screen.
     private void appendToLast(String str) {
         this.inputtext.getText().append(str);
     }
-
+//here im getting the numbers being typed into the screen and appending to form a complete arithmetic equation
     public void onClickNumber(View v) {
         Button b = (Button) v;
         display += b.getText();
         appendToLast(display);
         display="";
     }
-
+//here we are getting the arithmetic symbols being appended.
     public void onClickOperator(View v) {
         Button b = (Button) v;
         display += b.getText();
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+//the ability to clear the screen.
     public void onClearButton(View v) {
         inputtext.getText().clear();
         displaytext.setText("");
@@ -93,10 +93,11 @@ public class MainActivity extends AppCompatActivity {
     private String getinput() {
         return this.inputtext.getText().toString();
     }
+//    now this is a function to extract the value from the precision screen
     private String getprecision() {
         return this.precision_val.getText().toString();
     }
-
+// grabiing the operands from our complete equation string.
     private boolean endsWithOperatore() {
         return getinput().endsWith("+") || getinput().endsWith("-") || getinput().endsWith("/") || getinput().endsWith("x");
     }

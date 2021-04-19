@@ -11,20 +11,21 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c9421b-84fc-4539-8dbb-8fae96c7f4a7" name="Default Changelist" comment="" />
+    <list default="true" id="f1c9421b-84fc-4539-8dbb-8fae96c7f4a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/calculator/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/calculator/MainActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,5 +142,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1320" height="176" key="GridCell.Tab.0.bottom" timestamp="1618831438271">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="176" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
+    <state width="1320" height="176" key="GridCell.Tab.0.center" timestamp="1618831438271">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="176" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
+    <state width="1320" height="176" key="GridCell.Tab.0.left" timestamp="1618831438270">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="176" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1618831438270" />
+    <state width="1320" height="176" key="GridCell.Tab.0.right" timestamp="1618831438271">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="176" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
   </component>
 </project>
