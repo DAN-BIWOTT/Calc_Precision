@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-  
+
     public void equalresult(View v) {
         String input = getinput();
 
@@ -149,11 +149,11 @@ public class MainActivity extends AppCompatActivity {
             }
             if (input.contains("Cos(")) {
                 String tempInput = input.replaceAll("Cos\\(", "cos(");
-                input = input.concat(")");
+                input = tempInput.concat(")");
             }
             if (input.contains("Sin(")) {
                 String tempInput = input.replaceAll("Sin\\(", "sin(");
-                input = input.concat(")");
+                input = tempInput.concat(")");
             }
             if (input.contains("\u00F7")) {
                 input = input.replaceAll("\u00F7", "/");
