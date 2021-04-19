@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+import android.os.Debug;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -99,11 +100,16 @@ public class MainActivity extends AppCompatActivity {
     }
 // grabiing the operands from our complete equation string.
     private boolean endsWithOperatore() {
-        return getinput().endsWith("+") || getinput().endsWith("-") || getinput().endsWith("/") || getinput().endsWith("x");
+        return getinput().endsWith("+") || getinput().endsWith("-") || getinput().endsWith("/") || getinput().endsWith("x") || getinput().contentEquals("Tan(") || getinput().contentEquals("Sin(") || getinput().contentEquals("Cos(") || getinput().endsWith("!") || getinput().endsWith("e");
     }
 
     private void replace(String str) {
         inputtext.getText().replace(getinput().length() - 1, getinput().length(), str);
+    }
+
+    public long factorial(int n) {
+        if (n > 20) throw new IllegalArgumentException(n + " is out of range");
+        return (1 > n) ? 1 : n * factorial(n - 1);
     }
 
     private double operate(String a,String b,String cp)
@@ -112,11 +118,17 @@ public class MainActivity extends AppCompatActivity {
             case "+": return Double.valueOf(a) + Double.valueOf(b);
             case "-": return Double.valueOf(a) - Double.valueOf(b);
             case "x": return Double.valueOf(a) * Double.valueOf(b);
+            case "Tan(": return Math.tan(Double.valueOf(a));
+            case "Cos(": return Math.cos(Double.valueOf(a));
+            case "Sin(": return Math.sin(Double.valueOf(a));
+            case "e": return Math.exp(Double.valueOf(a));
+            case "!": return factorial(Integer.valueOf(String.valueOf(Double.valueOf(a))));
             case "\u00F7": return Double.valueOf(a) / Double.valueOf(b);
             default: return -1;
         }
     }
 
+  
     public void equalresult(View v) {
         String input = getinput();
 
@@ -125,7 +137,24 @@ public class MainActivity extends AppCompatActivity {
             if (input.contains("x")) {
                 input = input.replaceAll("x", "*");
             }
-
+            if (input.contains("e")) {
+                input = input.replaceAll("e", "e1");
+            }
+            if (input.contains("!")) {
+                input = input.replaceAll("!", "!");
+            }
+            if (input.contains("Tan(")) {
+                String tempInput = input.replaceAll("Tan\\(", "tan(");
+                input = tempInput.concat(")");
+            }
+            if (input.contains("Cos(")) {
+                String tempInput = input.replaceAll("Cos\\(", "cos(");
+                input = input.concat(")");
+            }
+            if (input.contains("Sin(")) {
+                String tempInput = input.replaceAll("Sin\\(", "sin(");
+                input = input.concat(")");
+            }
             if (input.contains("\u00F7")) {
                 input = input.replaceAll("\u00F7", "/");
             }
@@ -134,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
             double result = expression.evaluate();
             DecimalFormat precision = new DecimalFormat(getprecision().toString());
             displaytext.setText(String.valueOf(precision.format(result)));
+//            displaytext.setText(String.valueOf(input));
         }
         else displaytext.setText("");
 

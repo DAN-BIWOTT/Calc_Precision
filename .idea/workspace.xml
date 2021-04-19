@@ -5,6 +5,11 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/calculator/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/calculator/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +53,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="7YBNU19506145917" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-19T14:27:59.997Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -142,23 +150,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="176" key="GridCell.Tab.0.bottom" timestamp="1618831438271">
+    <state x="100" y="127" width="1166" height="541" key="AVDManager" timestamp="1618842789279">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="176" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
-    <state width="1320" height="176" key="GridCell.Tab.0.center" timestamp="1618831438271">
+    <state x="100" y="127" width="1166" height="541" key="AVDManager/0.27.1366.741@0.27.1366.741" timestamp="1618842789279" />
+    <state width="1320" height="176" key="GridCell.Tab.0.bottom" timestamp="1618849388951">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="176" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
-    <state width="1320" height="176" key="GridCell.Tab.0.left" timestamp="1618831438270">
+    <state width="1320" height="176" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1618849388951" />
+    <state width="1320" height="176" key="GridCell.Tab.0.center" timestamp="1618849388951">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="176" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1618831438270" />
-    <state width="1320" height="176" key="GridCell.Tab.0.right" timestamp="1618831438271">
+    <state width="1320" height="176" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1618849388951" />
+    <state width="1320" height="176" key="GridCell.Tab.0.left" timestamp="1618849388950">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="176" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1618831438271" />
+    <state width="1320" height="176" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1618849388950" />
+    <state width="1320" height="176" key="GridCell.Tab.0.right" timestamp="1618849388951">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="176" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1618849388951" />
+    <state x="379" y="155" width="598" height="481" key="refactoring.ChangeSignatureDialog" timestamp="1618843474252">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="379" y="155" width="598" height="481" key="refactoring.ChangeSignatureDialog/0.27.1366.741@0.27.1366.741" timestamp="1618843474252" />
   </component>
 </project>

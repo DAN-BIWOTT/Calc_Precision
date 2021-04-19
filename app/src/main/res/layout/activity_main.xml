@@ -68,10 +68,67 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/butSin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/number_button"
+                android:onClick="onClickNumber"
+                android:text="Sin("
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/butCos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/number_button"
+                android:onClick="onClickNumber"
+                android:text="Cos("
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/butTan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/number_button"
+                android:onClick="onClickNumber"
+                android:text="Tan("
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/butExponential"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/operation_button"
+                android:onClick="onClickOperator"
+                android:text="e"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/butFactorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/operation_button"
+                android:onClick="onClickOperator"
+                android:text="!"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal">
-            
+
             <Button
                 android:id="@+id/but7"
                 android:layout_width="match_parent"
